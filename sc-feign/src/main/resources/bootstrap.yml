@@ -1,0 +1,14 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: sc-feign
+  profiles:
+    active: dev
+  cloud:
+    config:
+      label: master
+      discovery:
+        enable: true
+        service-id: springcloud-config

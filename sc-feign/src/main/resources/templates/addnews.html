@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+
+<form id="ModiyDialogForm">
+    <!--<input type="hidden" name="hero_id" value="${chero.hero_id}">-->
+    <table >
+        <tr>
+            <td>标题</td>
+            <td>
+                <input name="title" class="form-control" >
+
+            </td>
+            <td>作者</td>
+            <td> <input name="author" class="form-control" >
+
+            </td>
+        </tr>
+        <tr>
+            <td>内容</td>
+            <td>
+                <input name="context" class="form-control" >
+            </td>
+            <td>关键词</td>
+            <td>
+                <input name="keywords" class="form-control">
+
+            </td>
+        </tr>
+        <tr>
+            <td>类型</td>
+            <td>
+                <select name="type">
+                    <option value="0">政治</option>
+                    <option value="1">经济</option>
+
+                </select>
+            </td>
+
+        </tr>
+    </table>
+
+</form>
+

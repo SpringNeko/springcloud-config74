@@ -1,0 +1,22 @@
+server:
+  port: 8090
+
+spring:
+  application:
+    name: springcloud-config
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/SpringNeko/springcloud-config74.git
+          search-paths: /
+          username: SpringNeko
+          password: 987864826yu
+      label: master
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+

@@ -1,0 +1,15 @@
+server:
+  port: 8085
+
+spring:
+  application:
+    name: sc-zuul
+  profiles:
+    active: dev
+  cloud:
+    discovery:
+      enabled: true
+      service-id: springcloud-config
+    config:
+      label: master
+      uri: http://localhost:8090

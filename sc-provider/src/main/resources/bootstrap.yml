@@ -1,0 +1,19 @@
+server:
+  port: 8762
+spring:
+  application:
+    name: sc-provider
+  profiles:
+    active: dev
+
+  cloud:
+    config:
+      label: master
+      discovery:
+        enabled: true
+        service-id: springcloud-config
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
